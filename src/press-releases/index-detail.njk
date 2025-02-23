@@ -1,0 +1,32 @@
+---
+pagination:
+  data: pressReleases
+  size: 1
+  alias: pressRelease
+permalink: "press-releases/{{ pressRelease.slug | slugify }}/"
+---
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/product1/support/index.css" />
+</head>
+<body>
+    {% include "header.njk" %}
+
+    <section>
+        <h1>{{ pressRelease.title }}</h1>
+        <p>{{ pressRelease.body }} </p>
+    </section>
+        
+    {% include "footer.njk" %}
+
+    <script src="/js/global.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/product1/support/index.js"></script>
+</body>
+</html>

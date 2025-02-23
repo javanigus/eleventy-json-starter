@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Press release 1",
+		"slug": "press-release-1",
+        "body": "This is the body of the press release 1."
+	},
+	{
+		"title": "Press release 2",
+		"slug": "press-release-2",
+        "body": "This is the body of the press release 2."
+	},
+	{
+		"title": "Press release 3",
+		"slug": "press-release-3",
+        "body": "This is the body of the press release 3."
+	},
+	{
+		"title": "Press release 4",
+		"slug": "press-release-4",
+        "body": "This is the body of the press release 4."
+	}
+]

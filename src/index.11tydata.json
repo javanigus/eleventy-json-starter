@@ -1,0 +1,22 @@
+{
+    "section1": {
+        "title": "This is the home page."
+    },
+    "section2": {
+        "textColor": "red",
+        "features": [
+               {
+                    "text": "Feature 1",
+                    "link": "/forms/vmdr/"
+               },
+               {
+                    "text": "Feature 2",
+                    "link": "/forms/pm/"
+               },
+               {
+                    "text": "Feature 3",
+                    "link": "/forms/cmdb/"
+               }
+           ]
+	}
+}

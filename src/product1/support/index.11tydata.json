@@ -1,0 +1,22 @@
+{
+    "section1": {
+        "title": "This is the product 1 support page."
+    },
+    "section2": {
+        "textColor": "red",
+        "features": [
+               {
+                    "text": "Feature 4",
+                    "link": "/forms/vmdr/"
+               },
+               {
+                    "text": "Feature 5",
+                    "link": "/forms/pm/"
+               },
+               {
+                    "text": "Feature 6",
+                    "link": "/forms/cmdb/"
+               }
+           ]
+	}
+}

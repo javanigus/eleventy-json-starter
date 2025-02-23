@@ -1,0 +1,22 @@
+header {
+    background-color: #282c34;
+}
+.header_wrapper {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: anchor-center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+}
+header li {
+    display: inline;
+    margin: 0 1em;
+}
+header nav a {
+    color: #fff;
+}
+header .logo {
+    font-size: 32px;
+}

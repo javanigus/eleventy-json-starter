@@ -1,0 +1,8 @@
+<section id="section2">
+    <h2 {% if section2.textColor %} style="color: {{ section2.textColor }};" {% endif %}>Features</h2>
+    <ul>
+        {% for feature in section2.features %}
+            <li><a href="{{feature.link}}">{{ feature.text }}</a></li>
+        {% endfor %}
+    </ul>
+</section>

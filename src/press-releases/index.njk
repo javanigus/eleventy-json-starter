@@ -1,0 +1,45 @@
+---js
+{
+  variable1: "value1",
+  eleventyComputed: {
+    datum(data) {
+      return data;
+    }
+  }
+}
+---
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/product1/support/index.css" />
+</head>
+<body>
+    {% include "header.njk" %}
+
+    <section>
+        <h1>Listing of all press releases</h1>
+        <ul>
+            {% for pressRelease in pressReleases %}
+                <li><a href="/press-releases/{{pressRelease.slug | slugify}}">{{ pressRelease.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+        
+    {% include "footer.njk" %}
+
+    <script src="/js/global.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/product1/support/index.js"></script>
+</body>
+</html>
+
+<!-- for debugging data -->
+<div style="padding: 1em;">
+<h2>Dump of all data</h2>
+<pre style="white-space: pre-wrap; word-wrap: break-word;"><code>{{ datum | debug }}</code></pre>
+</div>
